@@ -1,0 +1,85 @@
+
+body {
+    background-color: #7f9ccc;
+}
+#wrapper {
+    background-color: #ffffff;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    top: 25px;
+    width: 960px;
+}
+h3 {
+    color: #2c587d;
+}
+#mainContent {
+    background-color: #ffffff;
+    height: 750px;
+}
+#inputFormSection {
+    width: 500px;
+}
+fieldset {
+    border: 1px solid #2c587d;
+    margin: 10px;
+}
+legend, label {
+    color: #2c587d;
+    font-weight: bold;
+}
+.col1 {
+    display: block;
+    text-align: right;
+    white-space: nowrap;
+    width: 25%;
+}
+.col2 {
+    left: 150px;
+    position: relative;
+    text-align: left;
+    top: -20px;
+    width: 50%;
+}
+.formButtons {
+    text-align: right;
+}
+#messageSection {
+    color: #ff0000;
+    padding-left: 10px;
+}
+#composersTableContainer {
+    border: 1px solid #2c587d;
+    height: 220px;
+    margin: 10px;
+    overflow: scroll;
+    position: relative;
+    width: 95%;
+}
+#composersTable {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid #2c587d;
+}
+th {
+    color: #2c587d;
+}
+#composersFromLocalStorage {
+	border: 1px solid #2c587d;
+    padding: 10px;
+    margin: 10px;
+    overflow: scroll;
+    position: relative;
+    width: 95%;
+}
+.textGreen {
+    color: green;
+}
+.textPurple {
+    color: purple;
+}
+.textYellow {
+    color: yellow;
+}
+

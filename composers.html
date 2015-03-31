@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Composers - local storage</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/styles.css" /> 
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="mainContent">
+                <section id="inputFormSection">
+                    <form id="composerInfoForm">
+                        <fieldset>
+                            <legend>Composer Information:</legend>
+                            <br />
+                            <label for="firstName" class="col1">First Name: </label>
+                            <input type="text" id="firstName" class="col2" autofocus="autofocus" />
+                            <label for="lastName" class="col1">Last Name: </label>
+                            <input type="text" id="lastName" class="col2" />
+                            <label for="birthYear" class="col1">Birth Year: </label>
+                            <input type="text" id="birthYear" class="col2" autofocus="autofocus" />
+                            <label for="deathYear" class="col1">Death Year: </label>
+                            <input type="text" id="deathYear" class="col2" autofocus="autofocus" />
+                            <label for="country" class="col1">Country: </label>
+                            <input type="text" id="country" class="col2" autofocus="autofocus" />
+                            
+                            <!-- <label for="favoritefood">Favorite food</label>
+  							<select name="favoritefood" id="favoritefood">
+    						<option>Cheese</option>
+    						<option>Egg</option>
+    						<option>Cabbage</option>
+    
+  							</select> -->
+                            
+                            <label for="outputStyle" class="col1">OutputStyle: </label>
+                            <select name="outputStyle" id="outputStyle" class="col2" autofocus="autofocus">
+    							<option>innerHTMLForm</option>
+    							<option>textNodesForm</option>
+    							<option>innerHTMLOnly</option>
+							</select>
+							
+                            
+                        </fieldset>
+                        <fieldset class="formButtons">
+                            <input type="reset" id="btnReset" value="Clear" />
+                            <input type="submit" id="btnSubmit" value="Add Composer" />
+                        </fieldset>
+                    </form>
+                </section>
+                <section id="messageSection"><span id="messageSpan">&nbsp;</span></section>
+                <section id="composersFromLocalStorage"><span id="composerSpan"></span></section>
+                <section id="composersTableContainer">
+                    <!-- use a table here since we're displaying tabular data -->
+                    <table id="composersTable">
+                        <caption><h3>Composers</h3></caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Years</th>
+                                <th scope="col">Country</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- dynamically insert rows --> 
+                            <tr><td colspan="3">&nbsp;</td></tr> <!-- spacer-->
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+
+        <!-- include external script-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
